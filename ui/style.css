@@ -47,14 +47,19 @@ label {
   color: var(--muted);
   margin-bottom: 6px;
 }
-input, select, button {
+input, select, button, textarea {
   width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: #0b0d12;
   color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical; /* lets user expand if needed */
+  min-height: 60px; /* gives Reason box more space than Ticket */
 }
+
 
 button {
   cursor: pointer;
