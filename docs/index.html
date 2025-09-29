@@ -64,7 +64,7 @@
     const copyBtn = document.getElementById('copy');
 
     async function loadTemplate(lang, type) {
-      const path = `../templates/${lang}/${type}.md`;
+      const path = `/templates/${lang}/${type}.md`;
       const res = await fetch(path);
       if (!res.ok) {
         return `Unable to load template: ${path}`;
