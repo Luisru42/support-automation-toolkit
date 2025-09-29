@@ -1,0 +1,10 @@
+[2025-09-28 12:34:56] CID=12345 ERR=E042 Message=Payment failed for order OR-5823
+[2025-09-28 12:35:12] CID=12345 ERR=E042 Message=Payment failed for order OR-5823
+[2025-09-28 12:36:01] CID=67890 ERR=E010 Message=Login attempt failed due to invalid token
+[2025-09-28 12:36:22] CID=67890 ERR=E010 Message=Login attempt failed due to invalid token
+[2025-09-28 12:37:50] CID=44556 ERR=E099 Message=Shipping delay reported for order OR-5901
+DEBUG: Polling gateway heartbeat
+TRACE: Auth module step 2
+[2025-09-28 12:38:11] CID=44556 ERR=E099 Message=Shipping delay reported for order OR-5901
+
+[2025-09-28 12:39:00] CID=12345 ERR=E042 Message=Refund processed OR-5823
