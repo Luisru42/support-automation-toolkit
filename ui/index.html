@@ -41,6 +41,10 @@
         <label for="ticket">Ticket</label>
         <input id="ticket" placeholder="Ticket ID" />
       </div>
+      <div class="field">
+  <label for="reason">Reason</label>
+  <textarea id="reason" placeholder="Explain why this refund/apology/escalation is needed"></textarea>
+</div>
       <button id="load">Preview</button>
       <button id="copy">Copy</button>
     </section>
@@ -73,12 +77,14 @@
       const order = document.getElementById('order').value || '';
       const ticket = document.getElementById('ticket').value || '';
       const date = new Date().toLocaleDateString();
+      const reason = document.getElementById('reason').value || '';
 
       return text
         .replaceAll('{{name}}', name)
         .replaceAll('{{order}}', order)
         .replaceAll('{{ticket}}', ticket)
-        .replaceAll('{{date}}', date);
+        .replaceAll('{{date}}', date)
+        .replaceAll('{{reason}}', reason);
     }
 
     loadBtn.addEventListener('click', async () => {
